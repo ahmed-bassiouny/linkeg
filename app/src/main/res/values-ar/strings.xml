@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LinkApp</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة السر</string>
+    <string name="name">الاسم</string>
+    <string name="logo">اللوجو</string>
+    <string name="type">النوع</string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="sign_up">تسجيل حساب جديد</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="description">الوصف</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="price">السعر</string>
+    <string name="create_product">انشاء منتج</string>
+    <string name="thanks">شكرا</string>
+    <string name="add_item_successful">تم انشاء المنتج بنجاح</string>
+    <string name="category">الفئة</string>
+    <string name="confirm_password">تاكيد كلمة السر</string>
+    <string name="please_choose_image" >من فضلك اختار صورة</string>
+    <string name="error">خطا</string>
+    <string name="field_required" >هذا الحقل مطلوب</string>
+    <string name="email_invalid" >البريد الالكترونى غير صحيح</string>
+    <string name="invalid_password_lenght" >كلمة السر يجب ان تكون اكبر من 6 حروف</string>
+    <string name="invalid_confirm_password" >كلمة السر وتاكيد كلمة السر غير متطابقان</string>
+    <string name="invalid_phone" >رقم الهاتف يجب ان يكون 11 رقم</string>
+    <string name="product_logo">صورة المنتج</string>
+    <string name="thanks_for_register">شكرا لتسجيلك معنا</string>
+    <array name="account_type">
+        <item>مورد</item>
+        <item>تاجر</item>
+        <item>مصنع</item>
+    </array>
+    <array name="product_type">
+        <item>تيشرت بولو</item>
+        <item>تيشرت بيزك</item>
+        <item>قميض</item>
+        <item>بنطلون جبردين</item>
+        <item>بنطلون جينز</item>
+        <item>بنطلون سروال</item>
+        <item>شورت</item>
+    </array>
+    <array name="category">
+        <item>ملابس رجالى</item>
+        <item>ملابس حريمى</item>
+        <item>ملابس اطفال</item>
+        <item>احذية</item>
+        <item>شنط</item>
+        <item>ملابس رياضية</item>
+    </array>
+</resources>

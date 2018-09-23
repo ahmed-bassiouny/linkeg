@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">LinkApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="logo">Logo</string>
+    <string name="type">Type</string>
+    <string name="signin">Signin</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone">Phone</string>
+    <string name="description">Description</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="create_product">Create Product</string>
+    <string name="thanks">Thanks</string>
+    <string name="add_item_successful">Product added successfully</string>
+    <string name="category">Category</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="please_choose_image" >Please Select Image</string>
+    <string name="error">Error</string>
+    <string name="field_required" >This field Required</string>
+    <string name="email_invalid" >Email is invalid</string>
+    <string name="invalid_password_lenght" >Password must be greater than 6 character</string>
+    <string name="invalid_confirm_password" >Confirm password and password do\'t match</string>
+    <string name="invalid_phone" >Phone length must be 11 digit</string>
+    <string name="product_logo">Product Logo</string>
+    <string name="thanks_for_register">Thanks For Registration</string>
+    <array name="account_type">
+        <item>Supplier</item>
+        <item>Seller</item>
+        <item>Factory</item>
+    </array>
+    <array name="product_type">
+        <item>Polo T-Shirt</item>
+        <item>Bezek T-Shirt</item>
+        <item>Shmeis</item>
+        <item>Trousers</item>
+        <item>Jeans</item>
+        <item>Pants Pants</item>
+        <item>Shorts</item>
+    </array>
+    <array name="category">
+        <item>Men Clothing</item>
+        <item>Women's Clothing</item>
+        <item>children Clothing</item>
+        <item>Shoes</item>
+        <item>Bags</item>
+        <item>Sports Clothing</item>
+    </array>
+</resources>
