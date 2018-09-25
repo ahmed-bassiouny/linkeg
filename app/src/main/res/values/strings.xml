@@ -26,6 +26,9 @@
     <string name="product_logo">Product Logo</string>
     <string name="thanks_for_register">Thanks For Registration</string>
     <string name="please_fill_all_data">please fill all data</string>
+    <string name="are_you_sure" >Are you sure to log out</string>
+    <string name="no" >no</string>
+    <string name="yes" >yes</string>
     <array name="account_type">
         <item>Supplier</item>
         <item>Seller</item>
