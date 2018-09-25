@@ -29,6 +29,7 @@ public class ProductActivity extends AppCompatActivity {
     private Spinner type;
     private TextInputEditText price;
     private CircularProgressButton btnId;
+    private Bitmap myBitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,14 @@ public class ProductActivity extends AppCompatActivity {
         btnId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(name.getText().toString().trim().isEmpty() || description.getText().toString().trim().isEmpty() || price.getText().toString().trim().isEmpty() || myBitmap == null){
+                    Alerter.create(ProductActivity.this)
+                            .setTitle(getString(R.string.thanks))
+                            .setText(getString(R.string.please_fill_all_data))
+                            .setBackgroundColorRes(R.color.red)
+                            .show();
+                    return;
+                }
                 btnId.startAnimation();
 
                 new Handler().postDelayed(new Runnable() {
@@ -85,7 +94,7 @@ public class ProductActivity extends AppCompatActivity {
 
             @Override
             public void onImagePicked(File imageFile, EasyImage.ImageSource source, int type) {
-                Bitmap myBitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+                myBitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
                 img.setImageBitmap(myBitmap);
 
             }

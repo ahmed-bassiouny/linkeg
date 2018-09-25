@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Config {
     private static Retrofit retrofit;
-    private static final String baseUrl = "http://esameisa.com/demo/link/public/api/";
+    private static final String baseUrl = "https://www.linkeg.net/api/";
     public static API httpApiInterface;
 
 

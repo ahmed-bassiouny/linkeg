@@ -26,6 +26,9 @@
     <string name="invalid_phone" >رقم الهاتف يجب ان يكون 11 رقم</string>
     <string name="product_logo">صورة المنتج</string>
     <string name="thanks_for_register">شكرا لتسجيلك معنا</string>
+    <string name="please_fill_all_data">من فضلك املئ كل البيانات </string>
+
+
     <array name="account_type">
         <item>مورد</item>
         <item>تاجر</item>
