@@ -31,6 +31,9 @@
     <string name="are_you_sure" >هل انت متاكد من انك تريد تسجيل الخروج</string>
     <string name="no" >لا</string>
     <string name="yes" >نعم</string>
+    <string name="main">الصفحة الرئيسية</string>
+    <string name="add_product">اضافة منتج</string>
+
 
     <array name="account_type">
         <item>مورد</item>

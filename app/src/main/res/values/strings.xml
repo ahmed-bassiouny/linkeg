@@ -16,19 +16,21 @@
     <string name="add_item_successful">Product added successfully</string>
     <string name="category">Category</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="please_choose_image" >Please Select Image</string>
+    <string name="please_choose_image">Please Select Image</string>
     <string name="error">Error</string>
-    <string name="field_required" >This field Required</string>
-    <string name="email_invalid" >Email is invalid</string>
-    <string name="invalid_password_lenght" >Password must be greater than 6 character</string>
-    <string name="invalid_confirm_password" >Confirm password and password do\'t match</string>
-    <string name="invalid_phone" >Phone length must be 11 digit</string>
+    <string name="field_required">This field Required</string>
+    <string name="email_invalid">Email is invalid</string>
+    <string name="invalid_password_lenght">Password must be greater than 6 character</string>
+    <string name="invalid_confirm_password">Confirm password and password do\'t match</string>
+    <string name="invalid_phone">Phone length must be 11 digit</string>
     <string name="product_logo">Product Logo</string>
     <string name="thanks_for_register">Thanks For Registration</string>
     <string name="please_fill_all_data">please fill all data</string>
-    <string name="are_you_sure" >Are you sure to log out</string>
-    <string name="no" >no</string>
-    <string name="yes" >yes</string>
+    <string name="are_you_sure">Are you sure to log out</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="main">Home</string>
+    <string name="add_product">Add Product</string>
     <array name="account_type">
         <item>Supplier</item>
         <item>Seller</item>
