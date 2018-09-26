@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
                 int type = SharedPrefManager.getInteger("type");
                 Intent i;
                 if(type == 1 || type == 2)
-                    i = new Intent(SplashActivity.this, ProductActivity.class);
+                    i = new Intent(SplashActivity.this, HomeActivity.class);
                 else if(type == 3)
                     i = new Intent(SplashActivity.this, ThanksActivity.class);
                 else

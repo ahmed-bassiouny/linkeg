@@ -51,11 +51,11 @@ public class LoginActivity extends AppCompatActivity {
                 SharedPrefManager.setInteger("type",type);
                 Intent i;
                 if(type == 1 || type == 2)
-                    i = new Intent(LoginActivity.this, ProductActivity.class);
+                    i = new Intent(LoginActivity.this, HomeActivity.class);
                 else if(type == 3)
                     i = new Intent(LoginActivity.this, ThanksActivity.class);
                 else
-                    i = new Intent(LoginActivity.this, LoginActivity.class);
+                    i = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(i);
                 finish();
             }
