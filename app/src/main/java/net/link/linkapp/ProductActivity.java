@@ -53,35 +53,37 @@ public class ProductActivity extends AppCompatActivity {
         btnId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(name.getText().toString().trim().isEmpty() || description.getText().toString().trim().isEmpty() || price.getText().toString().trim().isEmpty() || myBitmap == null){
+                if (name.getText().toString().trim().isEmpty() || description.getText().toString().trim().isEmpty() || price.getText().toString().trim().isEmpty() || myBitmap == null) {
                     Alerter.create(ProductActivity.this)
-                            .setTitle(getString(R.string.thanks))
+                            .setTitle(getString(R.string.error))
                             .setText(getString(R.string.please_fill_all_data))
                             .setBackgroundColorRes(R.color.red)
                             .show();
                     return;
+                } else {
+                    btnId.startAnimation();
+
+                    new Handler().postDelayed(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            img.setImageDrawable(getResources().getDrawable(R.drawable.placeholder));
+                            name.setText("");
+                            price.setText("");
+                            description.setText("");
+                            type.setSelection(0);
+                            btnId.revertAnimation();
+                            Alerter.create(ProductActivity.this)
+                                    .setTitle(getString(R.string.thanks))
+                                    .setText(getString(R.string.add_item_successful))
+                                    .setBackgroundColorRes(R.color.green)
+                                    .show();
+                        }
+                    }, 2000);
                 }
-                btnId.startAnimation();
-
-                new Handler().postDelayed(new Runnable() {
-
-                    @Override
-                    public void run() {
-                        img.setImageDrawable(getResources().getDrawable(R.drawable.placeholder));
-                        name.setText("");
-                        price.setText("");
-                        description.setText("");
-                        type.setSelection(0);
-                        btnId.revertAnimation();
-                        Alerter.create(ProductActivity.this)
-                                .setTitle(getString(R.string.thanks))
-                                .setText(getString(R.string.add_item_successful))
-                                .setBackgroundColorRes(R.color.green)
-                                .show();
-                    }
-                }, 2000);
             }
         });
+
 
         findViewById(R.id.out).setOnClickListener(new View.OnClickListener() {
             @Override

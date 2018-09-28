@@ -64,13 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(image == null){
-                    Alerter.create(SignUpActivity.this)
-                            .setTitle(getString(R.string.error))
-                            .setText(getString(R.string.please_choose_image))
-                            .setBackgroundColorRes(R.color.red)
-                            .show();
-                }else if(name.getText().toString().trim().isEmpty()){
+                if(name.getText().toString().trim().isEmpty()){
                     name.setError(getString(R.string.field_required));
                 }else if(!email.getText().toString().trim().contains("@") || !email.getText().toString().trim().contains(".")){
                     email.setError(getString(R.string.email_invalid));
