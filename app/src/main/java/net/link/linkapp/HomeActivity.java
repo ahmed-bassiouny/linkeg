@@ -24,7 +24,9 @@ public class HomeActivity extends AppCompatActivity {
                         switch (which){
                             case DialogInterface.BUTTON_POSITIVE:
                                 SharedPrefManager.clearSharedPref();
-                                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                                Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
                                 finish();
                                 break;
 

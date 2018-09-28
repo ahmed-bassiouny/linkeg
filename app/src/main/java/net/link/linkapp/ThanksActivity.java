@@ -35,7 +35,7 @@ public class ThanksActivity extends AppCompatActivity {
                 }
             }
         });
-       /* findViewById(R.id.out).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.out).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
@@ -44,7 +44,9 @@ public class ThanksActivity extends AppCompatActivity {
                         switch (which){
                             case DialogInterface.BUTTON_POSITIVE:
                                 SharedPrefManager.clearSharedPref();
-                                startActivity(new Intent(ThanksActivity.this,LoginActivity.class));
+                                Intent intent = new Intent(ThanksActivity.this,LoginActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
                                 finish();
                                 break;
 
@@ -59,7 +61,7 @@ public class ThanksActivity extends AppCompatActivity {
                 builder.setMessage(getString(R.string.are_you_sure)).setPositiveButton(getString(R.string.yes), dialogClickListener)
                         .setNegativeButton(getString(R.string.no), dialogClickListener).show();
             }
-        });*/
+        });
 
     }
 }

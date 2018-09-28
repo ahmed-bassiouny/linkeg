@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ThanksActivity">
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview"/>
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pbProgress"
-        android:layout_gravity="center"/>
-<!--
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,30 +21,68 @@
             android:textSize="20sp" />
 
         <ImageView
+            android:id="@+id/out"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
-            android:id="@+id/out"
             android:layout_marginEnd="5dp"
-            android:tint="@color/white"
-            android:src="@drawable/logout"/>
+            android:src="@drawable/logout"
+            android:tint="@color/white" />
     </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/img"
-        android:src="@drawable/ic_check_circle_black_24dp"/>
-
-    <TextView
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview"/>
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textSize="24sp"
-        android:textColor="#000"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/img"
-        android:text="@string/thanks_for_register"/>-->
+        android:id="@+id/pbProgress"
+        android:layout_gravity="center"/>
+    </FrameLayout>
 
-</FrameLayout>
+    <!--
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:id="@+id/out"
+                android:layout_marginEnd="5dp"
+                android:tint="@color/white"
+                android:src="@drawable/logout"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/img"
+            android:src="@drawable/ic_check_circle_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img"
+            android:text="@string/thanks_for_register"/>-->
+
+</LinearLayout>
